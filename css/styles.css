@@ -2,7 +2,7 @@
   --primary-text-color: rgba(0, 0, 0, 0.8);
   --title-text-color: #212121;
   --accent-color: #18a0fb;
-  --hover-color: #18a0fb;
+  --hover-color: #c91ae0;
   --button-color: #2196f3;
   --praymary-white-color: #ffffff;
   --secondary-gray-color: #2f303a;
@@ -16,15 +16,18 @@ body {
   background-color: var(--bg-color);
   font-style: normal;
 }
+li {
+  list-style-type: none;
+}
 .logo a:hover,
 .logo a:focus {
   color: var(--test-color);
 }
-.site-nav a {
+.nav a {
   color: var(--accent-color);
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.nav a:hover,
+.nav a:focus {
   color: var(--hover-color);
 }
 
