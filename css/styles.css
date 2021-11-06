@@ -252,8 +252,9 @@ li {
   display: flex;
   justify-content: space-between;
 }
-.buttons:hover:focus {
-  color: var(--test-color); /*з цим ще толком не розібрався*/
+.buttons:hover,
+.buttons:focus {
+  color: var(--test-color);
 }
 
 .buttons {
