@@ -1,5 +1,6 @@
 :root {
   --primary-text-color: rgba(0, 0, 0, 0.8);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
   --title-text-color: #212121;
   --accent-color: #18a0fb;
   --hover-color: #c91ae0;
@@ -10,6 +11,7 @@
   --bg-color: #e5e5e5;
   --textarea-color: #757575;
   --test-color: #ccec12;
+  --filter-color-text: #f5f4fa;
 }
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -33,14 +35,14 @@ li {
 }
 .logo a:hover,
 .logo a:focus {
-  color: var(--test-color);
+  color: var(--button-color);
 }
 .nav a {
-  color: var(--accent-color);
+  color: var(--title-text-color);
 }
 .nav a:hover,
 .nav a:focus {
-  color: var(--hover-color);
+  color: var(--button-color);
 }
 
 .nav {
@@ -50,6 +52,7 @@ li {
   top: 0px;
 }
 .nav .logo {
+  font-family: Raleway;
   position: absolute;
   color: var(--title-text-color);
   width: 145px;
@@ -58,7 +61,8 @@ li {
 
   font-size: 26px;
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 0.6;
+  letter-spacing: 0.03em;
 }
 .site-nav {
   display: flex;
@@ -72,7 +76,8 @@ li {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 .nav-port {
   position: absolute;
@@ -82,7 +87,8 @@ li {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 .nav-cont {
   position: absolute;
@@ -92,7 +98,8 @@ li {
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1;
+  letter-spacing: 0.02em;
 }
 .mail {
   position: absolute;
@@ -101,9 +108,10 @@ li {
   top: 32px;
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
-  color: var(--textarea-color);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 .tel {
   position: absolute;
@@ -114,14 +122,15 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
-  color: var(--textarea-color);
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 .auth-nav a:hover {
-  color: var(--hover-color);
+  color: var(--button-color);
 }
 .auth-nav a:focus {
-  color: var(--test-color);
+  color: var(--button-color);
 }
 /*------------hero-------------*/
 .hero {
@@ -176,6 +185,7 @@ li {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .advantages-item-text {
   width: 270px;
@@ -215,6 +225,7 @@ li {
   font-weight: 700;
   line-height: 2.6;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 .team-item {
   display: flex;
@@ -223,39 +234,36 @@ li {
 .caption-team {
   font-weight: 500;
   line-height: 1.12;
+  letter-spacing: 0.03em;
 }
 .caption-team-text {
   color: var(--textarea-color);
   font-weight: 400;
   line-height: 1.12;
-  padding-bottom: 10px;
 }
 
 .images {
-  height: 270px;
-  width: 260px;
+  height: 260px;
+  width: 270px;
 }
 
-/*-----------------------------PORTFOLIO-----------------------*/
+/*------------PORTFOLIO-------------*/
 .filter {
   display: flex;
   justify-content: space-between;
 }
 .button {
-  /* width: 73px;
-  height: 38px;*/
   font-weight: 500;
   line-height: 1.6;
-  padding-bottom: 10;
-  background: var(--button-color);
-  color: var(--praymary-white-color);
-  cursor: pointer;
+  background: var(--filter-color-text);
+  color: var(--title-text-color);
 }
-.carditem {
+/*.carditem {
   padding-top: 174px;
   /* width: 1360px;
-  height: 1170px;*/
+  height: 1170px;
 }
+*/
 .cards {
   display: flex;
   justify-content: space-between;
@@ -263,17 +271,20 @@ li {
 .card {
   justify-content: space-between;
 }
-.card-items {
-  color: var(--textarea-color);
-  font-weight: 400;
-  line-height: 1.12;
-}
 .card-item {
   font-weight: 700;
-  line-height: 1.12;
+  font-size: 18px;
+  line-height: 2;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+.card-items {
+  color: var(--textarea-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
 .card-img {
   display: flex;
   width: 370px;
@@ -286,18 +297,17 @@ li {
   width: 1600px;
   height: 252px;
   left: 0px;
-  font-weight: 648px;
   background: var(--secondary-gray-color);
 }
-.footer {
+.footer li {
   color: var(--text-white-color);
 }
 .footer a {
-  color: var(--text-white-color);
+  color: var(--footer-text-color);
 }
 .footer a:hover {
-  color: var(--hover-color);
+  color: var(--accent-color);
 }
 .footer :focus {
-  color: orange;
+  color: var(--accent-color);
 }
