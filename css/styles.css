@@ -56,8 +56,8 @@ li {
 .nav .logo {
   font-family: Raleway;
   color: var(--title-text-color);
-  padding: 20px 25px;
-  margin: 20px 20px;
+  /*padding: 20px 25px;
+  margin: 20px 20px;*/
 
   font-weight: 700;
   font-size: 26px;
@@ -72,17 +72,10 @@ li {
   padding: 0px 150px;*/
   font-weight: 500;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1, 14;
   letter-spacing: 0.02em;
 }
-.mail {
-  padding: 16px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1;
-  letter-spacing: 0.02em;
-  color: var(--textarea-color);
-}
+.mail,
 .tel {
   padding: 16px;
   font-weight: 500;
@@ -273,9 +266,13 @@ li {
   background: var(--secondary-gray-color);
 }
 .footer .logo {
+  font-size: 26px;
+  line-height: 1.19;
   color: var(--text-white-color);
 }
 .footer li {
+  font-size: 14px;
+  line-height: 1.71;
   color: var(--text-white-color);
 }
 .footer a {
