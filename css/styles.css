@@ -50,35 +50,32 @@ li {
   color: var(--button-color);
 }
 .site-nav {
-  /*margin: 0 auto;*/
   display: flex;
   justify-content: space-between;
 }
 .nav .logo {
   font-family: Raleway;
-  position: absolute;
   color: var(--title-text-color);
   padding: 20px 25px;
   margin: 20px 20px;
 
   font-weight: 700;
   font-size: 26px;
-  line-height: 0.6;
+  line-height: 1.19;
   letter-spacing: 0.03em;
 }
 /*.site-nav li {
 }*/
 .nav-link {
-  /* max-width: 1600;*/
+  /* max-width: 1600;
   margin: 0 auto;
-  padding: 50px 220px;
+  padding: 0px 150px;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1;
   letter-spacing: 0.02em;
 }
 .mail {
-  /*margin: 20px;*/
   padding: 16px;
   font-weight: 500;
   font-size: 14px;
