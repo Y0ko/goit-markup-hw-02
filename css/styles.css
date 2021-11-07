@@ -120,7 +120,9 @@ li {
 }
 .hero > button:hover,
 .buttons:focus {
-  color: #188ce8;
+  background-color: #188ce8;
+  /*color: #188ce8;*/
+  color: var(--text-white-color);
 }
 
 /*----------НАШИ ПРЕИМУЩЕСТВА---------*/
